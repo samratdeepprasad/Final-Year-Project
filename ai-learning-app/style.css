@@ -1,0 +1,80 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f0f4ff;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+#app {
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+}
+
+header h1 {
+  text-align: center;
+  color: #0066ff;
+}
+
+#progress-container {
+  width: 100%;
+  background: #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+#progress-bar {
+  width: 0%;
+  height: 10px;
+  background: #00c853;
+  transition: width 0.3s ease;
+}
+
+#lesson, #score {
+  text-align: center;
+}
+
+#choices {
+  list-style: none;
+  padding: 0;
+}
+
+#choices li {
+  margin: 10px 0;
+}
+
+#choices button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  background: #e0e0e0;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.2s;
+}
+
+#choices button.correct {
+  background: #a5d6a7;
+}
+
+#choices button.incorrect {
+  background: #ef9a9a;
+}
+
+#next, #restart {
+  margin-top: 15px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  background: #0066ff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
